@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Friant" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hJg-EY-S5X">
+                                <rect key="frame" x="20" y="120" width="335" height="527"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ufW-a2-jCp">
+                                    <size key="itemSize" width="364" height="168"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FriantCell" id="e6U-7z-AL8" customClass="FriantCell" customModule="Friant" customModuleProvider="target">
+                                        <rect key="frame" x="-14.5" y="0.0" width="364" height="168"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="364" height="168"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="P8v-gs-aWM">
+                                                    <rect key="frame" x="0.0" y="0.0" width="364" height="168"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Furniture Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgV-LG-LoP">
+                                                    <rect key="frame" x="96.5" y="69.5" width="171.5" height="29"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="24"/>
+                                                    <color key="textColor" red="0.94321065989847719" green="0.94321065989847719" blue="0.94321065989847719" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="P8v-gs-aWM" firstAttribute="leading" secondItem="e6U-7z-AL8" secondAttribute="leading" id="HFK-8C-NAd"/>
+                                            <constraint firstItem="cgV-LG-LoP" firstAttribute="centerX" secondItem="e6U-7z-AL8" secondAttribute="centerX" id="UAU-Oe-Nkd"/>
+                                            <constraint firstAttribute="bottom" secondItem="P8v-gs-aWM" secondAttribute="bottom" id="ewk-HO-Jf4"/>
+                                            <constraint firstItem="P8v-gs-aWM" firstAttribute="top" secondItem="e6U-7z-AL8" secondAttribute="top" id="nAM-Rp-oyD"/>
+                                            <constraint firstItem="cgV-LG-LoP" firstAttribute="centerY" secondItem="e6U-7z-AL8" secondAttribute="centerY" id="q0c-qG-unf"/>
+                                            <constraint firstAttribute="trailing" secondItem="P8v-gs-aWM" secondAttribute="trailing" id="zhg-UO-nuv"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="nameLbl" destination="cgV-LG-LoP" id="qx9-k8-Z8P"/>
+                                            <outlet property="thumbImg" destination="P8v-gs-aWM" id="Dfe-fm-KHn"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oua-Yi-m6B">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="friant_logo" translatesAutoresizingMaskIntoConstraints="NO" id="KRq-8P-Ov8">
+                                        <rect key="frame" x="137" y="3" width="100" height="94"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="94" id="Igl-e7-Wm1"/>
+                                            <constraint firstAttribute="width" constant="100" id="bz6-dZ-BJD"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.81671363115310669" green="0.068029098212718964" blue="0.16710367798805237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="KRq-8P-Ov8" firstAttribute="centerX" secondItem="Oua-Yi-m6B" secondAttribute="centerX" id="isa-L9-DMc"/>
+                                    <constraint firstAttribute="height" constant="100" id="mba-rr-MtQ"/>
+                                    <constraint firstItem="KRq-8P-Ov8" firstAttribute="centerY" secondItem="Oua-Yi-m6B" secondAttribute="centerY" id="qwx-xr-5yg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94321065989847719" green="0.94321065989847719" blue="0.94321065989847719" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Oua-Yi-m6B" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6CE-Qt-fxv"/>
+                            <constraint firstAttribute="trailing" secondItem="Oua-Yi-m6B" secondAttribute="trailing" id="E3z-Uk-K6O"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hJg-EY-S5X" secondAttribute="bottom" constant="20" id="Q1q-fG-6zM"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hJg-EY-S5X" secondAttribute="bottom" constant="20" id="gBn-Ji-zr2"/>
+                            <constraint firstAttribute="trailing" secondItem="hJg-EY-S5X" secondAttribute="trailing" constant="20" id="wNd-iL-9LA"/>
+                            <constraint firstItem="hJg-EY-S5X" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="x9t-kh-zaf"/>
+                            <constraint firstItem="hJg-EY-S5X" firstAttribute="top" secondItem="Oua-Yi-m6B" secondAttribute="bottom" constant="20" id="ybt-wS-KWd"/>
+                            <constraint firstItem="Oua-Yi-m6B" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zvY-uv-SWL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collection" destination="hJg-EY-S5X" id="UUs-ES-ZYO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1" width="898" height="399"/>
+        <image name="friant_logo" width="264" height="264"/>
+    </resources>
+</document>
