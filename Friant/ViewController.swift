@@ -29,6 +29,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             cell.configureCell(friant: friant)
             
             return cell
+            
+            //If there are more than 15 pieces to display, it will not load all. Improves performance
       
         } else {
             
