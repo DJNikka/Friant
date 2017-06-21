@@ -24,9 +24,11 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     @IBAction func MakeCall(_ sender: Any) {
         
-        let url:NSURL = NSURL(string: "tel://5104213354")!
-//        UIApplication.shared.openURL(url as URL)
+        let url:NSURL = NSURL(string: "tel://5106979709")!
+//        UIApplication.shared.openURL(url as URL) -- deprecated method
   
+        //insert Friant's phone number when completed
+        
     UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
       
         
