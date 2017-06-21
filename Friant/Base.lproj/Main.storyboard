@@ -41,28 +41,24 @@
                                                 <imageView userInteractionEnabled="NO" alpha="0.55000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="P8v-gs-aWM">
                                                     <rect key="frame" x="0.0" y="0.0" width="364" height="168"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My-Hite" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgV-LG-LoP">
-                                                    <rect key="frame" x="35.5" y="86" width="173" height="56"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My-Hite" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cgV-LG-LoP">
+                                                    <rect key="frame" x="93.5" y="54.5" width="177" height="59"/>
                                                     <color key="backgroundColor" red="0.99988085029999996" green="1" blue="0.99987941979999995" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="tintColor" red="0.63594543147208116" green="0.11163221402602011" blue="0.13545622884224662" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="46"/>
-                                                    <color key="textColor" red="0.15189080073653832" green="0.15339467005076146" blue="0.15339467005076146" alpha="0.77643407534246578" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="0.99988085029999996" green="1" blue="0.99987941979999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
-                                                    <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <color key="shadowColor" red="0.81613248589999998" green="0.1413515508" blue="0.16583052279999999" alpha="0.81999143835616439" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <size key="shadowOffset" width="4" height="-4"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TaS-mS-COz">
-                                                    <rect key="frame" x="159" y="20" width="150" height="30"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="(510) 697-9709"/>
-                                                </button>
                                             </subviews>
                                         </view>
                                         <constraints>
                                             <constraint firstItem="P8v-gs-aWM" firstAttribute="leading" secondItem="e6U-7z-AL8" secondAttribute="leading" id="HFK-8C-NAd"/>
-                                            <constraint firstItem="cgV-LG-LoP" firstAttribute="centerX" secondItem="e6U-7z-AL8" secondAttribute="centerX" constant="-60" id="UAU-Oe-Nkd"/>
+                                            <constraint firstItem="cgV-LG-LoP" firstAttribute="centerX" secondItem="e6U-7z-AL8" secondAttribute="centerX" id="PwV-qC-ydq"/>
                                             <constraint firstAttribute="bottom" secondItem="P8v-gs-aWM" secondAttribute="bottom" id="ewk-HO-Jf4"/>
+                                            <constraint firstItem="cgV-LG-LoP" firstAttribute="centerY" secondItem="e6U-7z-AL8" secondAttribute="centerY" id="ftt-kD-wr8"/>
                                             <constraint firstItem="P8v-gs-aWM" firstAttribute="top" secondItem="e6U-7z-AL8" secondAttribute="top" id="nAM-Rp-oyD"/>
-                                            <constraint firstItem="cgV-LG-LoP" firstAttribute="centerY" secondItem="e6U-7z-AL8" secondAttribute="centerY" constant="30" id="q0c-qG-unf"/>
                                             <constraint firstAttribute="trailing" secondItem="P8v-gs-aWM" secondAttribute="trailing" id="zhg-UO-nuv"/>
                                         </constraints>
                                         <connections>
@@ -82,6 +78,13 @@
                                             <constraint firstAttribute="width" constant="100" id="bz6-dZ-BJD"/>
                                         </constraints>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TaS-mS-COz">
+                                        <rect key="frame" x="247" y="67" width="120" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="(510) 697-9709">
+                                            <color key="titleColor" red="0.97592383620000001" green="0.97666221860000002" blue="0.97603815790000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.81671363115310669" green="0.068029098212718964" blue="0.16710367798805237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
