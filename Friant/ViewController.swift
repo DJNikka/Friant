@@ -12,12 +12,23 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     @IBOutlet weak var collection: UICollectionView!
 
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
         collection.dataSource = self
         collection.delegate = self
+        
+    }
+    
+    @IBAction func MakeCall(_ sender: Any) {
+        
+        let url:NSURL = NSURL(string: "tel://5104213354")!
+//        UIApplication.shared.openURL(url as URL)
+  
+    UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
+      
         
     }
     
