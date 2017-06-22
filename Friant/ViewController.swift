@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var collection: UICollectionView!
+    
+    var friant = [Friant]()
 
 
     override func viewDidLoad() {
@@ -20,6 +22,38 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         collection.dataSource = self
         collection.delegate = self
         
+        parseFurnitureCSV()
+        
+    }
+    
+    func parseFurnitureCSV() {
+        
+        let path = Bundle.main.path(forResource: "friant", ofType: "csv")!
+        
+        do {
+            let csv = try CSV(contentsOfURL: path)
+            let rows = csv.rows
+            let columns = csv.columns
+            
+            print(columns)
+            
+            print(rows)
+            
+            for row in rows {
+                
+                let furnId = Int(row["id"]!)!
+                let name = row["identifier"]!
+                
+                let furn = Friant(name: name, furnitureId: furnId)
+            friant.append(furn)
+                
+            }
+            
+        
+        
+        } catch let err as NSError {
+            print(err.debugDescription)
+        }
     }
     
     @IBAction func MakeCall(_ sender: Any) {
@@ -28,6 +62,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 //        UIApplication.shared.openURL(url as URL) -- deprecated method
   
         //insert Friant's phone number when completed
+        
+        //also darken the photos in paint 2 for the main view. darken + transparency = standout letters
         
     UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
       
@@ -38,8 +74,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FriantCell", for: indexPath) as? FriantCell {
             
-            let friant = Friant(name: "Friant", furnitureId: indexPath.row)
-            cell.configureCell(friant: friant)
+            let furn = friant[indexPath.row]
+            cell.configureCell(friant: furn)
             
             return cell
             
@@ -58,7 +94,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        return 15
+        return friant.count
         
         
     }
