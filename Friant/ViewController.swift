@@ -48,8 +48,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             friant.append(furn)
                 
             }
-            
-        
         
         } catch let err as NSError {
             print(err.debugDescription)
@@ -90,6 +88,16 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
+        var furn: Friant!
+        
+        furn = friant[indexPath.row]
+
+    
+        performSegue(withIdentifier: "FriantDetailVC", sender: furn)
+        
+ // furn was returning a nil value. this was responsible for the application crashing upon loading the FriantDetailVC
+        // fetches the data from the parsed CSV file to pass through FriantDetailVC
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -107,6 +115,19 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         return CGSize(width: 335, height: 140)
+        
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "FriantDetailVC" {
+            if let detailsVC = segue.destination as? FriantDetailVC {
+                if let furn = sender as? Friant {
+                    detailsVC.friant = furn
+                }
+            }
+        }
+        
         
     }
     
