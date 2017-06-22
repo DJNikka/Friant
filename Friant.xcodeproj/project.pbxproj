@@ -64,13 +64,13 @@
 			children = (
 				63F7D5801EF9D31E00BECF0B /* Model */,
 				63F7D57B1EF9C7FE00BECF0B /* View */,
+				63F7D58D1EFB697600BECF0B /* Controller */,
+				63F7D58E1EFB69A000BECF0B /* Resources */,
+				63F7D58F1EFB69C600BECF0B /* Utilities */,
 				63F7D5691EF9C08100BECF0B /* AppDelegate.swift */,
-				63F7D56B1EF9C08100BECF0B /* ViewController.swift */,
 				63F7D56D1EF9C08100BECF0B /* Main.storyboard */,
-				63F7D5701EF9C08100BECF0B /* Assets.xcassets */,
 				63F7D5721EF9C08100BECF0B /* LaunchScreen.storyboard */,
 				63F7D5751EF9C08100BECF0B /* Info.plist */,
-				63F7D5891EFB4CC800BECF0B /* csv.swift */,
 				63F7D58B1EFB557000BECF0B /* friant.csv */,
 			);
 			path = Friant;
@@ -90,6 +90,30 @@
 				63F7D5811EF9D32900BECF0B /* Friant.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		63F7D58D1EFB697600BECF0B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				63F7D56B1EF9C08100BECF0B /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		63F7D58E1EFB69A000BECF0B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				63F7D5701EF9C08100BECF0B /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		63F7D58F1EFB69C600BECF0B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				63F7D5891EFB4CC800BECF0B /* csv.swift */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
