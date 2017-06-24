@@ -73,7 +73,6 @@
 				63F7D56D1EF9C08100BECF0B /* Main.storyboard */,
 				63F7D5721EF9C08100BECF0B /* LaunchScreen.storyboard */,
 				63F7D5751EF9C08100BECF0B /* Info.plist */,
-				63F7D58B1EFB557000BECF0B /* friant.csv */,
 			);
 			path = Friant;
 			sourceTree = "<group>";
@@ -107,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				63F7D5701EF9C08100BECF0B /* Assets.xcassets */,
+				63F7D58B1EFB557000BECF0B /* friant.csv */,
 			);
 			name = Resources;
 			sourceTree = "<group>";

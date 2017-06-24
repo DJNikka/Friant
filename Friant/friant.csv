@@ -1,13 +1,13 @@
-id,identifier
-1, My-Hite
-2,Interra
-3, Dash
-4, Novo
-5, System-2
-6, Tiles
-7, Verity
-8, Gitana
-9, Mesa
-10, Willow
-11, Standards
-12, Seating
+id,identifier,symbol
+1,My-Hite,MH
+2,Interra,I
+3,Dash,D
+4,Novo,N
+5,System-2,SY
+6,Tiles,T
+7,Verity,V
+8,Gitana,G
+9,Mesa,M
+10,Willow,W
+11,Standards,ST
+12,Seating,SE
