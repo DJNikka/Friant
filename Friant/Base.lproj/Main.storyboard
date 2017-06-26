@@ -153,12 +153,24 @@
                                         <nil key="highlightedColor"/>
                                         <color key="shadowColor" red="0.99988085029999996" green="1" blue="0.99987941979999995" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yd9-4z-Gwz">
+                                        <rect key="frame" x="20" y="23.5" width="30" height="53"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="30"/>
+                                        <state key="normal" title="&lt;">
+                                            <color key="titleColor" red="0.99988085029999996" green="1" blue="0.99987941979999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backBtnPressed:" destination="eef-kB-R4V" eventType="touchUpInside" id="XBa-eX-bHY"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.81613248589999998" green="0.1413515508" blue="0.16583052279999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="Yd9-4z-Gwz" firstAttribute="centerY" secondItem="stu-ma-1E6" secondAttribute="centerY" id="2uv-F3-PiT"/>
                                     <constraint firstItem="RpD-J1-qNf" firstAttribute="centerX" secondItem="stu-ma-1E6" secondAttribute="centerX" id="OSl-0n-fq1"/>
                                     <constraint firstAttribute="height" constant="100" id="QNG-NP-F3i"/>
                                     <constraint firstItem="RpD-J1-qNf" firstAttribute="centerY" secondItem="stu-ma-1E6" secondAttribute="centerY" id="eN2-Mw-qxr"/>
+                                    <constraint firstItem="Yd9-4z-Gwz" firstAttribute="leading" secondItem="stu-ma-1E6" secondAttribute="leading" constant="20" id="sGo-n8-Tdy"/>
                                 </constraints>
                             </view>
                         </subviews>
