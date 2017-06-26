@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63EF24511F0122FC00BA28CA /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EF24501F0122FC00BA28CA /* AboutVC.swift */; };
 		63F7D56A1EF9C08100BECF0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F7D5691EF9C08100BECF0B /* AppDelegate.swift */; };
 		63F7D56C1EF9C08100BECF0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F7D56B1EF9C08100BECF0B /* ViewController.swift */; };
 		63F7D56F1EF9C08100BECF0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63F7D56D1EF9C08100BECF0B /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		63EF24501F0122FC00BA28CA /* AboutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
 		63F7D5661EF9C08100BECF0B /* Friant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Friant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63F7D5691EF9C08100BECF0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63F7D56B1EF9C08100BECF0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			children = (
 				63F7D56B1EF9C08100BECF0B /* ViewController.swift */,
 				63F7D5901EFB6D3800BECF0B /* FriantDetailVC.swift */,
+				63EF24501F0122FC00BA28CA /* AboutVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63EF24511F0122FC00BA28CA /* AboutVC.swift in Sources */,
 				63F7D56C1EF9C08100BECF0B /* ViewController.swift in Sources */,
 				63F7D5911EFB6D3800BECF0B /* FriantDetailVC.swift in Sources */,
 				63F7D57F1EF9C83E00BECF0B /* FriantCell.swift in Sources */,
